@@ -9,6 +9,9 @@ import { PortafolioComponent } from './page/portafolio/portafolio.component';
 import { AboutComponent } from './page/about/about.component';
 import { ItemComponent } from './page/item/item.component';
 
+import { HttpClientModule } from '@angular/common/http';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +23,8 @@ import { ItemComponent } from './page/item/item.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
