@@ -24,9 +24,9 @@
 
 
 
-  <section class="ae-container-fluid ae-container-fluid--inner rk-portfolio">
-    <div class="ae-masonry ae-masonry-md-2 ae-masonry-xl-4">
-      <a *ngFor="let productosx of productoServices.productos" routerLink="/item" class=" animated fadeIn rk-item ae-masonry__item">
+
+    <div  *ngIf="!productoServices.cargando" class="ae-masonry ae-masonry-md-2 ae-masonry-xl-4">
+      <a *ngFor="let productosx of productoServices.productos" [routerLink]="['/item', productosx.cod]" class=" animated fadeIn rk-item ae-masonry__item">
         <img src="assets/productos/{{productosx.url}}.jpg" alt="">
         <div class="item-meta">
           <h2>{{productosx.titulo}}</h2>
@@ -34,5 +34,5 @@
         </div></a>
 
     </div>
-  </section>
+
 </section>

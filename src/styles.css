@@ -44,12 +44,12 @@
 /* Loading */
 
 body{
-  padding: 1em;
+
   background: white;
   color: #777;
   text-align: center;
   font-family: "Gill sans", sans-serif;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 

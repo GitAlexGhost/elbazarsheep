@@ -10,6 +10,7 @@ import { AboutComponent } from './page/about/about.component';
 import { ItemComponent } from './page/item/item.component';
 
 import { HttpClientModule } from '@angular/common/http';
+import { SearchComponent } from './page/search/search.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { HttpClientModule } from '@angular/common/http';
     FooterComponent,
     PortafolioComponent,
     AboutComponent,
-    ItemComponent
+    ItemComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
