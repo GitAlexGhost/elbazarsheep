@@ -17,7 +17,7 @@ export class ProductosService {
   private cargarProductos(){
 
     return new Promise( ( resolvex , reject) => {
-          this.http.get('https://ventasalex-362ab.firebaseio.com/productos_idx.json')
+          this.http.get('https://elbazardelsheep.firebaseio.com/productos_idx.json')
         .subscribe((resp: any[]) => {
           console.log('Servicio de productos ');
           this.cargando = false;

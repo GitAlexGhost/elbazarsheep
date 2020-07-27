@@ -20,7 +20,7 @@ export class ItemService {
   }
 
   private obtenerProductos() {
-    this.http.get('https://ventasalex-362ab.firebaseio.com/productos_idx.json')
+    this.http.get('https://elbazardelsheep.firebaseio.com/productos_idx.json')
     .subscribe((resp: any[]) => {
       this.productos = resp;
       console.log('obtener productos');
@@ -29,8 +29,8 @@ export class ItemService {
   }
   private obtenerProductos_item() {
 
-    return new Promise( (resolve, reject) =>{
-      this.http.get('https://ventasalex-362ab.firebaseio.com/productos_idx.json')
+    return new Promise( (resolve, reject) => {
+      this.http.get('https://elbazardelsheep.firebaseio.com/productos_idx.json')
     .subscribe((resp: ItemDescripcionProducto[]) => {
       this.setItemsProductos = resp;
       console.log(resp);
@@ -39,7 +39,7 @@ export class ItemService {
     });
   }
   obtenerUrl(id: string){
-  return this.http.get(`https://ventasalex-362ab.firebaseio.com/productos/${ id }.json`);
+  return this.http.get(`https://elbazardelsheep.firebaseio.com/productos/${ id }.json`);
   }
   BuscarProducto(termino: string){
     console.log(this.setItemsProductos.length);

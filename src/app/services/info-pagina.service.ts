@@ -29,7 +29,7 @@ export class InfoPaginaService {
   }
 
   private cargarEquipo() {
-    this.http.get('https://ventasalex-362ab.firebaseio.com/equipo.json')
+    this.http.get('https://elbazardelsheep.firebaseio.com/equipo.json')
     .subscribe((resp: InfoEquipo) => {
       console.log('Servicio Equipo');
       this.equipo = resp;
@@ -38,7 +38,7 @@ export class InfoPaginaService {
   }
   // es una forma directa de obtener datos sin ser validados por el constructor o interface
   private cargarEquipoForma2() {
-    this.http.get('https://ventasalex-362ab.firebaseio.com/equipo.json')
+    this.http.get('https://elbazardelsheep.firebaseio.com/equipo.json')
     .subscribe((resp: any) => {
       console.log('Servicio Equipo 2');
       this.equipo2 = resp;
