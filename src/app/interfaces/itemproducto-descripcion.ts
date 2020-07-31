@@ -8,6 +8,11 @@ export interface ItemDescripcionProducto {
   resumen?: string;
   subtitulo1?: string;
   subtitulo2?: string;
+  inicialesupload?: string;
+  fechaupload?: string;
+  estado?: string;
+  stock?: string;
+
 }
 
 export interface DatosProducto {
@@ -15,4 +20,5 @@ export interface DatosProducto {
   cod?: string;
   titulo?: string;
   url?: string;
+  precio?: string;
 }
