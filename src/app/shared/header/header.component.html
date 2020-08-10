@@ -20,9 +20,17 @@
         <li routerLinkActive="active" class="rk-menu__item"><a href="#0" class="rk-menu__link">Mis Paginas</a>
           <nav class="rk-menu__sub">
             <ul class="rk-container">
-              <li class="rk-menu__item"><a routerLink="about" class="rk-menu__link">Nosotros</a></li>
-              
+              <li class="rk-menu__item"><a routerLink="about" href="#" class="rk-menu__link">Nosotros</a></li>
             </ul>
+          </nav>
+        </li>
+        <li routerLinkActive="active" class="rk-menu__item"><a href="#0" class="rk-menu__link">Categorias</a>
+          <nav class="rk-menu__sub">
+            <ul class="rk-container">
+              <li class="rk-menu__item"><a (click)="buscarProducto('camara')"  href="#0" class="rk-menu__link">Camaras</a></li>
+              <li class="rk-menu__item"><a (click)="buscarProducto('perfume')" routerLink="about" class="rk-menu__link">Perfume</a></li>
+              <li class="rk-menu__item"><a (click)="buscarProducto('iptv')" routerLink="about" class="rk-menu__link">Ip-Tv</a></li>
+          </ul>
           </nav>
         </li>
         <li routerLinkActive="active" class="rk-menu__item"><a href="contact.html" class="rk-menu__link">Contacto</a>
